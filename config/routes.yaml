@@ -1,0 +1,3 @@
+api_modules:
+    resource: ../src/Module/*/Infrastructure/config/api_routes.yaml
+    prefix: /api
