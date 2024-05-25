@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Module\ML\Application\Interaction\Command\Handler;
+namespace App\Module\ML\Application\Interaction\Command\GenerateSpamCleansedDataset\Handler;
 
 use App\Core\Application\Path\AppPathResolver;
-use App\Module\ML\Application\Interaction\Command\GenerateSpamCleansedDatasetCommand;
+use App\Module\ML\Application\Interaction\Command\GenerateSpamCleansedDataset\GenerateSpamCleansedDatasetCommand;
 use App\Module\ML\Infrastructure\Reader\SpamDatasetReader;
 use League\Csv\Exception;
 use League\Csv\UnavailableStream;
@@ -26,6 +26,10 @@ readonly class GenerateSpamCleansedDatasetHandler
     #[AsMessageHandler(bus: 'command_bus')]
     public function handle(GenerateSpamCleansedDatasetCommand $command): void
     {
+        if (file_exists($command->outputCleansedFilename)) {
+            unlink($command->outputCleansedFilename);
+        }
+
         $inputDataset = $this->spamDatasetReader->read($command->inputFilename);
 
         if ($inputDataset->isEmpty()) {

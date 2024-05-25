@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Module\ML\Application\Interaction\Command;
+namespace App\Module\ML\Application\Interaction\Command\GenerateSpamCleansedDataset;
 
 use App\Core\Infrastructure\Interaction\Command\CommandInterface;
 

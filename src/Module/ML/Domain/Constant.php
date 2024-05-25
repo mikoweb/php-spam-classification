@@ -6,6 +6,8 @@ final class Constant
 {
     public const string DEFAULT_SPAM_DATASET_FILENAME = 'spam_NLP.csv';
     public const string DEFAULT_SPAM_CLEANSED_DATASET_FILENAME = 'spam_cleansed_NLP.csv';
+    public const string DEFAULT_SPAM_TRAINING_DATASET_FILENAME = 'spam_training_NLP.csv';
+    public const string DEFAULT_SPAM_TESTING_DATASET_FILENAME = 'spam_testing_NLP.csv';
     public const int DEFAULT_TO_LONG_WORD_SIZE = 46;
 
     public const array STOP_WORDS = [
