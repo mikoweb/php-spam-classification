@@ -13,6 +13,7 @@ composer.phar
 
 ###> APP ###
 /src/Command/DevCommand.php
+/resources/dataset/spam_cleansed_NLP.csv
 ###< APP ###
 
 ###> friendsofphp/php-cs-fixer ###
