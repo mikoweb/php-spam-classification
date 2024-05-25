@@ -28,6 +28,11 @@ readonly class AppPathResolver
         return $this->getResourcesPath($this->concatPath('dataset', $path));
     }
 
+    public function getModelPath(?string $path = null): string
+    {
+        return $this->getResourcesPath($this->concatPath('model', $path));
+    }
+
     public function concatPath(string $basePath, ?string $path): string
     {
         if (empty($path)) {
