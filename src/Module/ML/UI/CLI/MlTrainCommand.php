@@ -11,6 +11,9 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use Symfony\Component\Stopwatch\Stopwatch;
+
+use function Symfony\Component\String\u;
 
 #[AsCommand(
     name: 'app:ml:train',
@@ -30,6 +33,9 @@ class MlTrainCommand extends Command
         ini_set('memory_limit', '-1');
         $io = new SymfonyStyle($input, $output);
 
+        $stopwatch = new Stopwatch();
+        $stopwatch->start('train');
+
         $io->info('Generating cleansed dataset...');
 
         $this->commandBus->dispatch(new GenerateSpamCleansedDatasetCommand(
@@ -43,6 +49,18 @@ class MlTrainCommand extends Command
             Constant::DEFAULT_SPAM_CLEANSED_DATASET_FILENAME,
             Constant::SPAM_MODEL_FILENAME,
         );
+
+        $profile = $stopwatch->stop('train');
+
+        $io->section(u('Profile data:')->padEnd(40, ' ')->toString());
+        $io->table([
+            'Parameter',
+            'Value',
+        ], [
+            ['End date', date('Y-m-d H:i:s')],
+            ['Execution time', round($profile->getDuration() / 1000 / 60, 2) . ' min'],
+            ['Memory', round($profile->getMemory() / 1024 / 1024, 2) . ' MiB'],
+        ]);
 
         $io->success('Training complete!');
 
