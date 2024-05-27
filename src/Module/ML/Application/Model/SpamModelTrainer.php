@@ -134,7 +134,7 @@ class SpamModelTrainer
 
         foreach ($samples as $sample) {
             $items = array_filter(
-                preg_split('/\s|<br\/>/', $sample[0]),
+                preg_split('/\s/', $sample[0]),
                 fn (string $word) => !empty($word)
             );
 

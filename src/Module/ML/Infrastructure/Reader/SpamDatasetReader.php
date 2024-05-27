@@ -60,7 +60,7 @@ readonly class SpamDatasetReader
 
     private function clearMessage(string $message, int $tooLongWordSize): string
     {
-        $result = trim(nl2br(strip_tags(
+        $result = trim(strip_tags(html_entity_decode(
             u($message)
                 ->replaceMatches('/(<(script|style)\b[^>]*>).*?(<\/\2>)/is', '$1$3')
                 ->replaceMatches('/([a-zA-Z\-]+:).*?(\r\n|\r|\n)/is', '')
@@ -80,8 +80,9 @@ readonly class SpamDatasetReader
     private function normalizeMessage(string $message): string
     {
         return u($message)
+            ->replaceMatches('/\r\n|\r|\n/is', ' ')
+            ->replaceMatches('/\s+/uis', ' ')
             ->collapseWhitespace()
-            ->replaceMatches('/\s*<br \/>\s*/is', '<br/>')
             ->toString();
     }
 
