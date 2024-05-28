@@ -44,15 +44,15 @@ class SpamModelTrainer
     public function train(
         string $trainingDatasetFilename,
         string $outputModelFilename,
-        float $splitRatio = 0.75,
-        int $minWordsCount = 2,
-        int $minDocumentCount = 4,
-        float $maxDocumentRatio = 0.5,
+        float $splitRatio = Constant::DEFAULT_SPLIT_RATIO,
+        int $minWordsCount = Constant::DEFAULT_MIN_WORDS_COUNT,
+        int $minDocumentCount = Constant::DEFAULT_MIN_DOCUMENT_COUNT,
+        float $maxDocumentRatio = Constant::DEFAULT_MAX_DOCUMENT_RATIO,
         string $language = Constant::DEFAULT_LANGUAGE,
         int $treeMaxHeight = PHP_INT_MAX,
-        int $treeEstimators = 200,
-        float $treeRatio = 0.15,
-        bool $treeBalanced = true,
+        int $treeEstimators = Constant::DEFAULT_TREE_ESTIMATORS,
+        float $treeRatio = Constant::DEFAULT_TREE_RATIO,
+        bool $treeBalanced = Constant::DEFAULT_TREE_BALANCED,
         bool $history = true,
     ): void {
         $dataset = Labeled::fromIterator(new CSV(
