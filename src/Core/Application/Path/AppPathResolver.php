@@ -33,6 +33,11 @@ readonly class AppPathResolver
         return $this->getResourcesPath($this->concatPath('model', $path));
     }
 
+    public function getTestPath(?string $path = null): string
+    {
+        return $this->getResourcesPath($this->concatPath('test', $path));
+    }
+
     public function concatPath(string $basePath, ?string $path): string
     {
         if (empty($path)) {

@@ -33,4 +33,6 @@ final class Constant
         'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don',
         'should', 'now',
     ];
+
+    public const int DEFAULT_FOLDS_NUMBER = 5;
 }

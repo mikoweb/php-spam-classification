@@ -17,7 +17,7 @@ use function Symfony\Component\String\u;
 
 #[AsCommand(
     name: 'app:ml:train',
-    description: 'Command for training a spam classification model.',
+    description: 'Command to training a spam classification model.',
 )]
 class MlTrainCommand extends Command
 {
