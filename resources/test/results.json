@@ -1,0 +1,326 @@
+[
+    {
+        "score": 0.9005485736614984,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 200,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8992281606042768,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 100,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8989915239452649,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 100,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8988926855101612,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 100,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8987329976160094,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 200,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8983103808032814,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 200,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8979051239855487,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 200,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8977234933624505,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 200,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8971752295525304,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 200,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8970812192597707,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 100,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8964288973537444,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 100,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.895093012993831,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 100,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8950496661852151,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 100,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8945837889969412,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 200,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8940306385014587,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 200,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8926710750040057,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 200,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8918479419432727,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 100,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8917438226716733,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 100,
+            "treeRatio": 0.2
+        }
+    },
+    {
+        "score": 0.8796754835366005,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 100,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8787411918479744,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 200,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8777657805278685,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 200,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8762513353697574,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 200,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8757788774947974,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 200,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8757292635102818,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 200,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8749433484827558,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 200,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8746592494519201,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 200,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8744205038972546,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 100,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8739876625082486,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 100,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.873598397958183,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 100,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.873222830076933,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 100,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8729749981356643,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.4,
+            "treeEstimators": 100,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8722233753681593,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.5,
+            "treeEstimators": 100,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8708876807258139,
+        "parameters": {
+            "minDocumentCount": 3,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 200,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8702160556416338,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 200,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8686940160329726,
+        "parameters": {
+            "minDocumentCount": 4,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 100,
+            "treeRatio": 0.1
+        }
+    },
+    {
+        "score": 0.8684554491198778,
+        "parameters": {
+            "minDocumentCount": 2,
+            "maxDocumentRatio": 0.3,
+            "treeEstimators": 100,
+            "treeRatio": 0.1
+        }
+    }
+]
