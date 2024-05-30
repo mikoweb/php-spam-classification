@@ -1,3 +1,8 @@
+app_default_index:
+    path: /
+    controller: App\Core\UI\Controller\DefaultController::index
+    methods: [GET]
+
 api_modules:
     resource: ../src/Module/*/Infrastructure/config/api_routes.yaml
     prefix: /api

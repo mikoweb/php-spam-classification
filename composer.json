@@ -8,24 +8,35 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-mbstring": "*",
+        "friendsofsymfony/rest-bundle": "^3.7",
         "league/csv": "^9.16",
+        "nelmio/api-doc-bundle": "^4.26",
+        "nelmio/cors-bundle": "^2.4",
         "ramsey/collection": "^2.0",
         "rubix/ml": "^2.4",
+        "symfony/apache-pack": "^1.0",
+        "symfony/asset": "7.0.*",
         "symfony/console": "7.0.*",
         "symfony/dotenv": "7.0.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "7.0.*",
         "symfony/messenger": "7.0.*",
+        "symfony/monolog-bundle": "^3.10",
         "symfony/runtime": "7.0.*",
+        "symfony/security-bundle": "7.0.*",
+        "symfony/serializer": "7.0.*",
         "symfony/stopwatch": "7.0.*",
+        "symfony/twig-bundle": "7.0.*",
         "symfony/validator": "7.0.*",
+        "symfony/var-dumper": "7.0.*",
         "symfony/yaml": "7.0.*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.57",
         "phpstan/phpstan": "^1.11",
         "squizlabs/php_codesniffer": "^3.10",
-        "symfony/maker-bundle": "^1.59"
+        "symfony/maker-bundle": "^1.59",
+        "symfony/web-profiler-bundle": "7.0.*"
     },
     "config": {
         "allow-plugins": {
