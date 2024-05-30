@@ -16,7 +16,7 @@ final class Constant
     public const int DEFAULT_MIN_DOCUMENT_COUNT = 4;
     public const float DEFAULT_MAX_DOCUMENT_RATIO = 0.5;
     public const int DEFAULT_TREE_ESTIMATORS = 200;
-    public const float DEFAULT_TREE_RATIO = 0.15;
+    public const float DEFAULT_TREE_RATIO = 0.2;
     public const bool DEFAULT_TREE_BALANCED = true;
 
     public const int DEFAULT_TO_LONG_WORD_SIZE = 46;
