@@ -1,0 +1,4 @@
+api_ml_predict:
+    path: /predict
+    controller: App\Module\ML\UI\Controller\PredictController::predict
+    methods: [POST]

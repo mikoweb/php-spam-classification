@@ -1,0 +1,3 @@
+api_ml:
+    resource: api_routes/ml.yaml
+    prefix: /ml
