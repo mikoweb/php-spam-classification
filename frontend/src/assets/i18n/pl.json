@@ -1,0 +1,9 @@
+{
+  "404_page": {
+    "title": "404 Code",
+    "description": "Nie znaleziono strony!"
+  },
+  "ml_client": {
+    "common_validation_error": "Błąd walidacji!"
+  }
+}
