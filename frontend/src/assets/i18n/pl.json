@@ -5,5 +5,8 @@
   },
   "ml_client": {
     "common_validation_error": "Błąd walidacji!"
+  },
+  "ml": {
+    "predict_fail": "Wystąpił problem w trakcie predykcji!"
   }
 }

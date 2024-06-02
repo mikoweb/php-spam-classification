@@ -30,7 +30,7 @@ export class AppComponent {
     const commandBus = inject(CommandBus);
 
     CustomElementRegistry.init(appRef);
-    // await import('../import-global-elements');
+    await import('../import-global-elements');
 
     LayoutReady.init();
     LayoutInitializer.init();

@@ -32,7 +32,9 @@ const providers: Array<Provider | EnvironmentProviders> = [
   { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   { provide: LOCALE_ID, useValue: environment.defaultLanguage },
   importProvidersFrom(
-    IonicModule.forRoot({}),
+    IonicModule.forRoot({
+      innerHTMLTemplatesEnabled: true,
+    }),
     HttpClientModule,
     TranslateModuleFacade.forRoot(),
   ),

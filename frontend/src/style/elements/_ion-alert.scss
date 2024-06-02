@@ -1,3 +1,31 @@
+@import "../app-variables";
+
 ion-alert {
   position: fixed !important;
+}
+
+.spam-alert {
+  vertical-align: middle;
+
+  &--red {
+    color: $md-red-400;
+  }
+
+  &--green {
+    color: $md-green-400;
+  }
+}
+
+.spam-alert-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+
+  &--red {
+    color: $md-red-400;
+  }
+
+  &--green {
+    color: $md-green-400;
+  }
 }
