@@ -8,6 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { NgForOf } from '@angular/common';
 import { AskForPredictionQuery } from '@app/module/ml/application/interaction/query/ask-for-prediction-query';
 import { AlertController } from '@ionic/angular';
+import TranslatorService from '@app/core/application/translator/TranslatorService';
 
 const { encapsulation, schemas } = customElementParams;
 
@@ -42,7 +43,8 @@ export class SpamFormComponent extends CustomElementBaseComponent {
     ele: ElementRef,
     gsl: GlobalStyleLoader,
     private readonly askForPredictionQuery: AskForPredictionQuery,
-    private alertController: AlertController
+    private readonly alertController: AlertController,
+    private readonly translator: TranslatorService,
   ) {
     super(ele, gsl);
   }
@@ -55,18 +57,22 @@ export class SpamFormComponent extends CustomElementBaseComponent {
     const spam: boolean = await this.askForPredictionQuery.ask(this.form.get('message')?.value);
     let alert;
 
+    const message: string = await this.translator.get(
+      spam ? 'ml.message_this_is_spam' : 'ml.message_not_spam'
+    );
+
     if (spam) {
       alert = await this.alertController.create({
-        header: 'To jest spam!',
+        header: await this.translator.get('ml.message_this_is_spam_header'),
         message: `<ion-icon name="alert-circle" class="spam-alert-icon spam-alert-icon--red"></ion-icon>
-            <span class="spam-alert spam-alert--red">Twoja wiadomość została sklasyfikowana jako spam.</span>`,
+            <span class="spam-alert spam-alert--red">${message}</span>`,
         buttons: ['OK'],
       });
     } else {
       alert = await this.alertController.create({
-        header: 'Zwyczajna wiadomość',
+        header: await this.translator.get('ml.message_not_spam_header'),
         message: `<ion-icon name="happy" class="spam-alert-icon spam-alert-icon--green"></ion-icon>
-            <span class="spam-alert spam-alert--green">Te nie jest spam.</span>`,
+            <span class="spam-alert spam-alert--green">${message}</span>`,
         buttons: ['OK'],
       });
     }

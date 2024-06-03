@@ -1,0 +1,21 @@
+{
+  "404_page": {
+    "title": "404 Code",
+    "description": "Page not found!"
+  },
+  "default_page": {
+    "information": "Please enter your text into the box below to check if it is spam.\nThe classification model only supports English."
+  },
+  "ml_client": {
+    "common_validation_error": "Validation error!"
+  },
+  "ml": {
+    "predict_fail": "There was a problem during prediction!",
+    "message_label": "Message",
+    "spam_check_button": "Spam check",
+    "message_this_is_spam_header": "This is spam!",
+    "message_this_is_spam": "Your message has been classified as spam.",
+    "message_not_spam_header": "NOT Spam",
+    "message_not_spam": "This is not spam."
+  }
+}

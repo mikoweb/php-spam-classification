@@ -6,7 +6,7 @@
         formControlName="message"
         required
         label-placement="floating"
-        label="Message"
+        label="{{ 'ml.message_label' | translate }}"
         [autoGrow]="true"
         rows="25"></ion-textarea>
     </div>
@@ -15,7 +15,7 @@
         fill="outline"
         (click)="onSubmit()"
         [disabled]="!isFilled() || formDisabled">
-        Sprawdź czy spam
+        {{ 'ml.spam_check_button' | translate }}
       </ion-button>
     </div>
   </form>
