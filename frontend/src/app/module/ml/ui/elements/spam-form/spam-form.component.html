@@ -15,9 +15,14 @@
         class="app-spam-form__button"
         fill="outline"
         (click)="onSubmit()"
-        [disabled]="!isFilled() || formDisabled">
+        [disabled]="!isFilled() || loading">
         {{ 'ml.spam_check_button' | translate }}
       </ion-button>
     </div>
+    <ng-template [ngIf]="loading">
+      <div class="app-spam-form__loader">
+        <ion-spinner name="circular"></ion-spinner>
+      </div>
+    </ng-template>
   </form>
 </div>
