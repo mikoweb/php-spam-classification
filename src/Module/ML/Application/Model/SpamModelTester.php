@@ -18,6 +18,9 @@ use Rubix\ML\Extractors\CSV;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
+/**
+ * @see https://docs.rubixml.com/latest/cross-validation.html#validators
+ */
 class SpamModelTester
 {
     private static ?SymfonyStyle $io = null;
